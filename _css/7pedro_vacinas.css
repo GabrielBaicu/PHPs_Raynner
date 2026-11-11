@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(36, 36, 36);
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.legenda {
+    background-color: goldenrod;
+    padding: 1px 20px;
+    margin-left: 10px;
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+
+fieldset {
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.textolegenda {
+    color:black ;
+    font-weight: bold;
+    display: block;
+    transform: skewX(20deg);
+}
+
+input[type=radio] {
+    accent-color: rgb(218, 164, 32)
+}

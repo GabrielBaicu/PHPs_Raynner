@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionarios</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <p>Cadastro de funcionarios</p>
+        </legend>
+        <form method="post" action="7,5gariel.php">
+            <label>Nome:<p></p><input type="text" placeholder="Jorge" name="nome" required></label>
+            <p></p>
+            <label>Data de nascimento:<p></p><input type="date" name="data" required></label>
+            <p></p>
+            <label>Função na empresa:<p></p><select name="funcao" required>
+                <option value="Selecione"></option>asdfn
+                <option value="Limpeza"></option>
+                <option value="Manutenção"></option>
+                <option value="RH"></option>
+                <option value="Pesquisador"></option>
+                <option value="Segurança"></option>
+                <option value="Gerente"></option>
+            </select></label>
+            <p></p>
+            <label>Nivel de acesso:<p></p><select name="nivel" required>
+                <option value="Selecione"></option>
+                <option value="Nivel 1"></option>
+                <option value="Nivel 2"></option>
+                <option value="Nivel 3"></option>
+                <option value="Nivel 4"></option>
+                <option value="Nivel 5"></option>
+            </select></label>
+            <p></p>
+            <label>Setor da empresa:<p></p><select name="setor" required>
+                <option value="Selecione"></option>Selecione
+                <option value="Escritorio"></option>Escritorio
+                <option value="Laboratorios"></option>
+                <option value="Manutenção"></option>
+                <option value="Estoque"></option>
+                <option value="Contenções"></option>
+            </select></label>
+            <p></p>
+            <label>Telefone de contato:<p></p><input type="tel" placeholder="(00) 00000-0000" name="tel" required></label>
+            <p></p>
+            <label>Estado civil:<p></p><select name="civil">
+                <option value="Selecione"></option>Selecione
+                <option value="Solteiro(a)"></option>Solteiro(a)
+                <option value="Casado(a)"></option>Casado(a)
+                <option value="Divorciado(a)"></option>Divorciado(a)
+                <option value="Viúvo(a)"></option>Viúvo(a)
+                <option value="Separado(a)"></option>Separado(a)
+            </select></label>
+            <p></p>
+            <label>Possui filhos?<p></p></label>
+            <label><input type="radio" name="filho" value="1">Não tenho</label>
+            <p></p>
+            <label><input type="radio" name="filho" value="2">Tenho 1</label>
+            <p></p>
+            <label><input type="radio" name="filho" value="3">Tenho 2</label>
+            <p></p>
+            <label><input type="radio" name="filho" value="4">Tenho 3</label>
+            <p></p>
+            <label><input type="radio" name="filho" value="5 ou mais">Tenho 4 ou mais</label>
+            <p></p>
+        </form>
+    </fieldset>
+</body>
+</html>

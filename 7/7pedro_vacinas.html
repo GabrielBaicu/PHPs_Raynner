@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha de vacinas</title>
+    <link rel="stylesheet" href="../_css/7pedro_vacinas.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend class="legenda">
+            <p class="textolegenda">campanha de vacinação</p>
+        </legend>
+        <form method="post" action="7pedro_vacinas.php">
+            <label>Quanto tempo desde o seu ultimo checkup?<p></p><input type="text" placeholder="859 dias"
+                    name="checkup" required></label>
+            <p></p>
+            <label>Esta com todas as vacinas em dia?<p></p></label>
+            <label><input type="radio" name="vaci" value="Sim">Sim</label>
+            <p></p>
+            <label><input type="radio" name="vaci" value="Não, nao quero">Não, e não quero tomar</label>
+            <p></p>
+            <label><input type="radio" name="vaci" value="Não, quero">Não, e quero tomar</label>
+            <p></p>
+            <label>Tem alguma doença cronica?<p></p></label>
+            <label><input type="radio" name="cronic" value="Não">Não</label>
+            <p></p>
+            <label><input type="radio" name="cronic" value="67">Sim, qual?</label>
+            <input type="text" name="cronic">
+            <p></p>
+            <label>Esteve doente recentemente?<p></p></label>
+            <label><input type="radio" name="doen" value="Sim">Sim</label>
+            <p></p>
+            <label><input type="radio" name="doen" value="Não">Não</label>
+            <p></p>
+            <label>Você cuida da sua saúde regularmente?<p></p></label>
+            <label><input type="radio" name="regu" value="Sim">Sim</label>
+            <p></p>
+            <label><input type="radio" name="regu" value="Não">Não</label>
+            <p></p>
+            <label>Tem alergia a algum medicamento?<p></p></label>
+            <label><input type="radio" name="medic" value="Não">Não</label>
+            <p></p>
+            <label><input type="radio" name="medic" value="69">Sim, qual?</label>
+            <input type="text" name="medic">
+            <p></p>
+            <input class="botenvia" type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+</body>
+
+</html>

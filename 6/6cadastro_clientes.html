@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro dos Maculados - Cadastro</title>
+
+    <!-- Fontes no estilo Souls-like / Fantasia Sombria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Vinculação do CSS Externo -->
+    <link rel="stylesheet" href="../_css/6cadastro_clientes.css">
+</head>
+<body>
+
+    <fieldset>
+        <legend>⚜ REGISTRO DOS MACULADOS ⚜</legend>
+        <form method="post" action="6saves_clientes.php">
+            <label>Nome:<p></p><input type="text" placeholder="Nome do Campeão" name="Nome" required></label>
+            <p></p>
+            <label>CPF:<p></p><input type="number" placeholder="Código de Inscrição" name="CPF" required></label>
+            <p></p>
+            <label>CNPJ:<p></p><input type="number" placeholder="Selo de Clã" name="CNPJ"></label>
+            <p></p>
+            <label>Telefone:<p></p><input type="tel" placeholder="Sinal de Invocação" name="Telefone" required></label>
+            <p></p>
+            <label>Endereço:<p></p><input type="text" placeholder="Feudo / Domínio" name="Endereco" required></label>
+            <p></p>
+            <label>Cidade:<p></p><input type="text" placeholder="Reino de Origem" name="Cidade" required></label>
+            <p></p>
+            <label>Estado:<p></p><select name="Estado">
+                <option value="">Selecione o Reino</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select></label>
+            <p></p>
+            <input type="submit" value="OFERECER ALMA">
+        </form>
+    </fieldset>
+
+</body>
+</html>

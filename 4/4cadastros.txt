@@ -1,0 +1,7 @@
+13/10/2026 19:38:17 | GABRIEL | gabrielrodrigues@clebininc.com | (09)95632-5945 | 2009-12-28 | 654.987.321-65 | rua pneu, 3456 | votucity | SP | nao | pos_graduacao
+13/10/2026 19:41:10 | Clebin 012 | clebin012@clebininc.com | (17)99687-6541 | 2030-06-20 | 321.654.978-98 | rua pneu, 3456 | votucity | PI | nao | formacao_profissional
+13/10/2026 19:44:20 | Clebin 002 | clebin002@clebininc.com | (17)99851-9813 | 2029-02-15 | 874.915.362-65 | rua pneu, 3456 | votucity | PI | nao | formacao_profissional
+13/10/2026 19:47:26 | Clebin 003 | clebin003@clebininc.com | (18)98652-9875 | 2029-02-19 | 545.876.867-95 | rua pneu, 3456 | votucity | PI | sim | formacao_profissional
+13/10/2026 20:00:59 | Victor Henrique Teodoro Camargo Dos Santos | victorhenrique@clebininc.com | (15)7676767667 | 1945-06-06 | 999999999999 | rua calango, 6666 | votucity | PR | sim | pos_graduacao
+13/10/2026 20:38:28 | Clebin 004 | clebin004@clebininc.com | (17)98654-9875 | 2029-03-22 | 123.658.987-95 | rua pneu, 3456 | votucity | PI | nao | graduacao
+13/10/2026 21:06:05 | Clebin 005 | clebin005@clebininc.com | (14)95654-9875 | 2029-04-04 | 651.978.675-65 | rua pneu, 3456 | votucity | PI | sim | ensino_fundamental

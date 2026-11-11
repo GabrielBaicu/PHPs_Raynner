@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notas Fiscais</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro de Notas Fiscais</legend>
+        <form method="post" action="6saves_nota.php">
+            <label>Nome da Empresa:<p></p><input type="text" placeholder="Nome" name="nome"></label>
+            <p></p>
+            <label>CNPJ:<p></p><input type="number" placeholder="CNPJ" name="CNPJ"></label>
+            <p></p>
+            <label>Telefone:<p></p><input type="tel" placeholder="Telefone" name="telefone" required></label>
+            <p></p>
+            <label>Endereço:<p></p><input type="text" placeholder="Endereco" name="endereco" required></label>
+            <p></p>
+            <label>Cidade:<p></p><input type="text" placeholder="Cidade" name="cidade" required></label>
+            <p></p>
+            <label>Estado:<p></p><select name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select></label>
+            <p></p>
+            <label>Forma de Pagamento:<p></p><input type="text" placeholder="Pagamento" name="pagamento" required></label>
+            <p></p>
+            <label>Tarifa ICMS:<p></p><input type="text" placeholder="ICMS" name="ICMS" required></label>
+            <p></p>
+            <label>Tarifa IPI:<p></p><input type="text" placeholder="IPI" name="IPI" required></label>
+            <p></p>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+</body>
+</html>

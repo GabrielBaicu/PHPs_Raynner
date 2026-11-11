@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Cyberpunk 2077</title>
+    
+    <!-- Tipografia Futurista (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        /* Palette Cyberpunk 2077 */
+        :root {
+            --cyber-yellow: #fcee0a;
+            --cyber-cyan: #00f0ff;
+            --cyber-red: #ff0055;
+            --cyber-dark: #0a0b10;
+            --cyber-card: #12131a;
+            --cyber-border: #1f2333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--cyber-dark);
+            /* Grid digital cibernético no fundo */
+            background-image: 
+                linear-gradient(rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: #ffffff;
+            font-family: 'Rajdhani', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal com Corte Diagonal */
+        #div1 {
+            background-color: var(--cyber-card);
+            border: 2px solid var(--cyber-yellow);
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 580px;
+            position: relative;
+            /* Recorte nos cantos superiores e inferiores */
+            clip-path: polygon(
+                0 0, 
+                calc(100% - 35px) 0, 
+                100% 35px, 
+                100% 100%, 
+                35px 100%, 
+                0 calc(100% - 35px)
+            );
+            box-shadow: 0 0 30px rgba(252, 238, 10, 0.15);
+        }
+
+        /* Badge/Tag estilo Terminal no topo do Card */
+        #div1::before {
+            content: "SYSTEM_REQ // V2.077";
+            position: absolute;
+            top: 0;
+            right: 40px;
+            background-color: var(--cyber-yellow);
+            color: #000000;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 10px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: var(--cyber-yellow);
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(252, 238, 10, 0.4);
+            border-bottom: 2px solid var(--cyber-cyan);
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: var(--cyber-cyan);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-family: 'Share Tech Mono', monospace;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Indicador neon antes de cada título de campo */
+        h2::before {
+            content: ">";
+            color: var(--cyber-yellow);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        /* Estilização dos Inputs e Selects */
+        .botoes {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--cyber-border);
+            border-left: 4px solid var(--cyber-cyan);
+            color: #ffffff;
+            padding: 12px 15px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease-in-out;
+            border-radius: 0;
+        }
+
+        .botoes:focus {
+            border-color: var(--cyber-yellow);
+            border-left: 4px solid var(--cyber-yellow);
+            background-color: rgba(252, 238, 10, 0.05);
+            box-shadow: 0 0 15px rgba(252, 238, 10, 0.25);
+            color: #ffffff;
+        }
+
+        .botoes::placeholder {
+            color: #4a5268;
+        }
+
+        /* Ajustes específicos para Select */
+        select.botoes {
+            cursor: pointer;
+            appearance: none;
+            background-image: linear-gradient(45deg, transparent 50%, var(--cyber-cyan) 50%),
+                              linear-gradient(135deg, var(--cyber-cyan) 50%, transparent 50%);
+            background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+            background-size: 5px 5px, 5px 5px;
+            background-repeat: no-repeat;
+        }
+
+        select.botoes option {
+            background-color: var(--cyber-card);
+            color: #ffffff;
+        }
+
+        /* Botão de Envio estilo Cyberpunk */
+        .botenvia {
+            width: 100%;
+            margin-top: 30px;
+            padding: 16px;
+            background-color: var(--cyber-yellow);
+            color: #000000;
+            border: none;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            cursor: pointer;
+            /* Ângulos cortados do botão */
+            clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+            transition: all 0.2s ease;
+        }
+
+        .botenvia:hover {
+            background-color: var(--cyber-cyan);
+            color: #000000;
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+            transform: translateY(-2px);
+        }
+
+        .botenvia:active {
+            background-color: var(--cyber-red);
+            color: #ffffff;
+            transform: translateY(1px);
+        }
+
+        /* Ajuste do ícone de data para navegadores Webkit */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.8) sepia(100%) saturate(1000%) hue-rotate(140deg);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <form method="post" action="5pedido.php">
+            <h1>Cadastro de Pedidos</h1>
+            
+            <h2>Número do Pedido</h2>
+            <input class="botoes" type="number" name="numero_pedido" placeholder="Digite o número do pedido"><br>
+            
+            <h2>Data do Pedido</h2>
+            <input class="botoes" type="date" name="data_pedido"><br>
+            
+            <h2>Tabela do Pedido</h2>
+            <input class="botoes" type="text" name="tabela_pedido" placeholder="Digite a tabela do pedido"><br>
+            
+            <h2>Nome do Cliente</h2>
+            <input class="botoes" type="text" name="nome_cliente" placeholder="Digite o nome do cliente"><br>
+            
+            <h2>Endereço do Cliente</h2>
+            <input class="botoes" type="text" name="endereco_cliente" placeholder="Digite o endereço do cliente"><br>
+            
+            <h2>CEP do Cliente</h2>
+            <input class="botoes" type="text" name="cep_cliente" placeholder="Digite o CEP do cliente"><br>
+            
+            <h2>Cidade do Cliente</h2>
+            <input class="botoes" type="text" name="cidade_cliente" placeholder="Digite o nome da sua cidade"><br>
+            
+            <h2>Estado do cliente</h2>
+            <select class="botoes" name="estado_cliente" id="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br>
+            
+            <h2>Telefone do Cliente</h2>
+            <input class="botoes" type="tel" name="telefone_cliente" placeholder="Digite o telefone do cliente"><br>
+            
+            <h2>Data de Entrega</h2>
+            <input class="botoes" type="date" name="data_entrega"><br><br>
+            
+            <input class="botenvia" type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

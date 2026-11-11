@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <style>
+        .calc {
+            border: 5px solid red;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .calc2 {
+            border: 5px solid red;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .calc legend {
+            color: red;
+            font-size: 30px;
+            font-family: "Arial Black", "Impact", sans-serif;
+        }
+        img{
+            background-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="calc">
+        <legend class="calc">CALCULADORA</legend>
+        <form method="post" action="3soma.php">
+            Digite o primeiro número (entre 1 e 5 Decilhôes)<br><input class="calc2" type="number" name="N1A" placeholder="Ex:9           " min="1" max="5000000000000000000000000000000000"><br>
+            Digite o segundo número (entre 1 e 5 Decilhôes)<br><input class="calc2" type="number" name="N2A" placeholder="Ex:3           " min="1" max="5000000000000000000000000000000000"><br><br>
+            <select name="OPER" required>
+                <option class="calc2" value="soma">Soma</option>
+                <option class="calc2" value="sub">Subtração</option>
+                <option class="calc2" value="mult">Multiplicação</option>
+                <option class="calc2" value="div">Divisão</option>
+            </select>
+            <br><br><input type="submit" value="Enviar">
+        </form>
+        <img src="_images/nintendo logo.png" alt="nintendo" width="200" height="120">
+    </fieldset>
+</body>
+
+</html>

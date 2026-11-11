@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação Medica</title>
+    <link rel="stylesheet" href="../_css/7pedro.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend class="legenda">
+            <p class="textolegenda">Dados Pessoais</p>
+        </legend>
+        <form method="post" action="7pedro.php">
+            <label>Nome do responsavel da casa:<p></p><input type="text" placeholder="Nome do responsavel" name="nome" required></label>
+            <p></p>
+            <label>Quantas pessoas moram na sua casa?<p></p></label>
+            <label><input type="radio" name="pquan" value="1">1</label>
+            <p></p>
+            <label><input type="radio" name="pquan" value="2">2</label>
+            <p></p>
+            <label><input type="radio" name="pquan" value="3">3</label>
+            <p></p>
+            <label><input type="radio" name="pquan" value="4">4</label>
+            <p></p>
+            <label><input type="radio" name="pquan" value="5 ou mais">5 ou mais</label>
+            <p></p>
+            <label>Telefone:<p></p><input type="tel" placeholder="(00) 00000-0000" name="telefone" required></label>
+            <p></p>
+            <label>Já possui um cadastro em alguma Estação Medica?<p></p></label>
+            <label><input type="radio" name="cadas" value="Sim">Sim</label>
+            <p></p>
+            <label><input type="radio" name="cadas" value="Nâo">Não</label>
+            <p></p>
+            <label>Esta com as vacinas em dia?<p></p></label>
+            <label><input type="radio" name="vaci" value="Sim">Sim</label>
+            <p></p>
+            <label><input type="radio" name="vaci" value="Nâo">Não</label>
+            <p></p>
+            <label>Quanto tempo desde o seu ultimo checkup?<p></p><input type="text" placeholder="859 dias" name="checkup" required></label>
+            <p></p>
+            <input class="botenvia" type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+</body>
+
+</html>

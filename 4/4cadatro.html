@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        #div1 {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid ;
+            border-radius: 5px;
+            background-color: #3E2723;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1A1513;
+        }
+        .botoes {
+            background-color: #1A1513;
+            color: #A67C1E;
+            border: solid #A67C1E;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .botoes::placeholder {
+        color: #A67C1E; 
+        }
+
+        .botradio {
+            font-size: 24px; 
+            display: inline-flex;
+            align-items: center; 
+            gap: 8px;
+            font-weight: bold;
+            color:#FFD700;
+        }
+
+        .botradio input[type="radio"] {
+            accent-color: #A67C1E;
+            transform: scale(1.5);
+            margin: 5px;
+            color:#FFD700;
+        }
+         h1, h2 {
+            color: #FFD700;
+        }
+        .botenvia {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <form method="post" action="4cadastro.php">
+            <h1>Cadastro de Pessoas</h1>
+            <h2>Nome Completo</h2>
+            <input class="botoes" type="text" name="nome" placeholder="Digite seu nome completo"><br>
+            <h2>Email</h2>
+            <input class="botoes" type="email" name="email" placeholder="Digite seu email"><br>
+            <h2>Telefone</h2>
+            <input class="botoes" type="text" name="telefone" placeholder="Digite seu telefone"><br>
+            <h2>Data de Nascimento</h2>
+            <input class="botoes" type="date" name="nascimento"><br>
+            <h2>CPF</h2>
+            <input class="botoes" type="text" name="cpf" placeholder="Digite seu CPF"><br>
+            <h2>Endereço</h2>
+            <input class="botoes" type="text" name="endereco" placeholder="Digite seu endereço"><br>
+            <h2>Cidade</h2>
+            <input class="botoes" type="text" name="cidade" placeholder="Digite o nome da sua cidade"><br>
+            <h2>Estado</h2>
+            <select class="botoes" name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select id="estado"><br>
+            <h2>Portador de Deficiência</h2>
+            <label class="botradio">
+                <input type="radio" name="deficiencia" value="sim"> Sim
+            </label>
+            <br><br>
+            <label class="botradio">
+                <input type="radio" name="deficiencia" value="nao"> Não
+            </label>
+            <h2>Escolaridade</h2>
+            <select class="botoes" name="escolaridade">
+                <option value="">Selecione sua escolaridade</option>
+                <option value="ensino_fundamental">Ensino Fundamental</option>
+                <option value="ensino_medio">Ensino Médio</option>
+                <option value="formacao_profissional">Formação Profissional</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos_graduacao">Pós-Graduação</option>
+            </select>
+            <br><br>
+            <input class="botenvia" type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

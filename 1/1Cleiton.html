@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O CULTO DA BATATA SOLITÁRIA</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        #h1{
+            background-color: lightgrey;
+        }
+        .batata{
+            border: 5px solid;
+            text-align: center;
+        }
+        /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f172a;
+      color: #ffffff;
+      min-height: 200vh; /* Altura extra para testar o scroll */
+      padding: 20px;
+    }
+
+    /* 1. Contentor Fixo no Rodapé */
+    .news-footer-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999; /* Garante que fica por cima de todo o conteúdo */
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Wrapper para alinhar o selo com a barra */
+    .news-footer-inner {
+      position: relative;
+      width: 100%;
+      max-width: 1200px; /* Largura máxima da barra (pode ajustar para 100%) */
+      margin: 0 20px;
+    }
+
+    /* 2. Selo LIVE STREAMING (Posicionado sobre o canto superior direito da barra) */
+    .live-badge {
+      position: absolute;
+      top: -31px; /* Posiciona o selo exatamente em cima da borda da barra branca */
+      right: 0;
+      display: inline-flex;
+      align-items: center;
+      font-family: 'Arial Black', Impact, sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      border-radius: 6px 6px 0 0;
+      overflow: hidden;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .live-badge .live {
+      background: linear-gradient(180deg, #33d6ff 0%, #0088cc 100%);
+      color: #0b1d3a;
+      padding: 6px 14px;
+    }
+
+    .live-badge .streaming {
+      background: linear-gradient(180deg, #ff4d4d 0%, #cc0000 100%);
+      color: #ffffff;
+      padding: 6px 18px;
+    }
+
+    /* 3. Barra de Notícias Branca com Linha Vermelha */
+    .news-bar {
+      background-color: #ffffff;
+      color: #111111;
+      padding: 18px 24px 14px 24px;
+      border-bottom: 7px solid #e60000; /* Faixa vermelha inferior */
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 2px 0 0 0;
+    }
+
+    .news-text {
+      font-size: 19px;
+      font-weight: bold;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Corta o texto com "..." caso seja muito longo */
+    }
+    </style>
+</head>
+<header>
+    <h1 id="h1">O CULTO DA BATATA SOLITÁRIA</h1>
+    <div>
+        <img class="batata" src="_images/batata inglesa.jpg" alt="A BATATA">
+    </div>
+</header>
+<hr>
+<body>
+    <h1>O que é o Culto da Batata Solitaria?</h1>
+    <p>Criado em meados dos anos 80, o Culto da Batata Solitaria<br> tem o objetivo de reunir pessoas solitarias para cutuar a BATATA,<br> que os ajuda a se sentirem acompanhados e acolidos.</p>
+    <hr>
+    <h1>Comfira algumas imagem da BATATA</h1>
+    <img class="batata" src="_images/batata doce.jpg" alt="Epoca de academia da BATATA">
+    <img class="batata" src="_images/batatão.jpg" alt="BATATA na sua melhor versão">
+    <img class="batata" src="_images/batata inglesa.jpg" alt="A BATATA em outro dia">
+    <img class="batata" src="_images/familia batata.jpg" alt="BATATA e sua família">
+    <img class="batata" src="_images/batata rei.jpg" alt="A BATATA em seu reino">
+</body>
+<footer>
+    <!-- ESTRUTURA DO RODAPÉ FIXO -->
+  <div class="news-footer-container">
+    <div class="news-footer-inner">
+      
+      <!-- Selo Live Streaming no topo da barra -->
+      <div class="live-badge">
+        <span class="live">LIVE</span>
+        <span class="streaming">STREAMING</span>
+      </div>
+
+      <!-- Barra de Notícias Branca -->
+      <div class="news-bar">
+        <div class="news-text">
+          ÚLTIMA HORA: DIGITE AQUI O TEXTO DA SUA NOTÍCIA EM DIRETO...
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</html>
