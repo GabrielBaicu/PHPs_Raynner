@@ -8,13 +8,13 @@ $qtd = $_POST["qtd"];
 
 $linhas = date('d/m/Y') . " | " . $cod . " | " . $desc . " | " . $valor . " | " . $qtd . " | " . PHP_EOL;
 
-file_put_contents("9Notas.txt", $linhas, FILE_APPEND);
+file_put_contents("9Notas_fiscais.txt", $linhas, FILE_APPEND);
 
 ?>
 <!-- criação da tabela -->
 <?php
 
-$linhas = file("9Notas.txt", FILE_IGNORE_NEW_LINES);
+$linhas = file("9Notas_fiscais.txt", FILE_IGNORE_NEW_LINES);
 $soma = 0;
 ?>
 

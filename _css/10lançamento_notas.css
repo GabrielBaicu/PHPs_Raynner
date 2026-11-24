@@ -1,0 +1,10 @@
+fieldset {
+    background-color: rgb(0, 153, 255);
+    border: 3px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../_css/10lançamento_notas.css">
+</head>
+
+<body>
+    <Fieldset>
+        <legend>Lançamento de notas</legend>
+        <form action="10Cria_txt.php" method="post">
+            <label class="label">Nome do aluno: <br><input type="text" placeholder="Jorge" name="nome" required></label>
+            <p></p>
+            <label class="label">Nota de atividades (nota1): <br><input type="decimal" placeholder="6.2" name="nota1" required></label>
+            <p></p>
+            <label class="label">Nota de participação: (nota2) <br><input type="decimal" placeholder="4.5" name="nota2" required></label>
+            <p></p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </Fieldset>
+    <a href="10lançamento_notas.php">
+        <button>Ir para Registro de notas</button>
+    </a>
+</body>
+
+</html>
