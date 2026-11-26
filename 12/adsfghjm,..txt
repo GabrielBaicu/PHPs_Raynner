@@ -1,0 +1,24 @@
+travessia de fronteira 
+
+card veiculo
+
+tipo do carro 
+peso máximo
+dono do carro
+
+passaporte
+
+nome
+sobre nome
+numero do passaporte
+nacionalidade
+data de nacimento
+data de validade
+
+permissão de entrada
+
+numero de entrada
+nome
+sobre nome
+validade
+motivo para entrar

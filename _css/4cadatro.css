@@ -1,0 +1,45 @@
+        #div1 {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid ;
+            border-radius: 5px;
+            background-color: #3E2723;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1A1513;
+        }
+        .botoes {
+            background-color: #1A1513;
+            color: #A67C1E;
+            border: solid #A67C1E;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .botoes::placeholder {
+        color: #A67C1E; 
+        }
+
+        .botradio {
+            font-size: 24px; 
+            display: inline-flex;
+            align-items: center; 
+            gap: 8px;
+            font-weight: bold;
+            color:#FFD700;
+        }
+
+        .botradio input[type="radio"] {
+            accent-color: #A67C1E;
+            transform: scale(1.5);
+            margin: 5px;
+            color:#FFD700;
+        }
+         h1, h2 {
+            color: #FFD700;
+        }
+        .botenvia {
+            
+        }

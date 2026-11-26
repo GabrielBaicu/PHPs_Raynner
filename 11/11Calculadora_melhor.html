@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora bolada</title>
+    <link rel="stylesheet" href="../_css/11Calculadora_melhor.css">
+</head>
+<body>
+    <fieldset class="calc">
+        <legend class="calc2">CALCULADORA BOMBADA</legend>
+        <form method="post" action="11soma_melhor.php">
+            Digite o primeiro número (entre 1 e 5 Decilhôes)<br><input class="calc2" type="decimal" name="N1" placeholder="Ex:9           " min="1" max="5000000000000000000000000000000000"><br>
+            Digite o segundo número (entre 1 e 5 Decilhôes)<br><input class="calc2" type="decimal" name="N2" placeholder="Ex:3           " min="1" max="5000000000000000000000000000000000"><br><br>
+            <select class="calc2" name="OPE" required>
+                <option value="soma">Adição</option>
+                <option value="sub">Subtração</option>
+                <option value="mult">Multiplicação</option>
+                <option value="div">Divisão</option>
+            </select>
+            <br><br><input class="calc2" type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>
