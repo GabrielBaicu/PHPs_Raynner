@@ -6,13 +6,17 @@ $escolha = $_POST['escolha'];
 $dtn = $_POST['dtn'];
 $dtv = $_POST['dtv'];
 
+$nada = $_POST['nada'];
+
 $ide = $_POST['ide'];
 $nomeE = $_POST['nomeE'];
 $dtvE = $_POST['dtvE'];
 $mot = $_POST['mot'];
 
+$nada = null;
+
 // criação do txt
-$linhas = $nomeP . " | " . $idp . " | " . $escolha . " | " . $dtn . " | " . $dtv . " | " . $ide . " | " . $nomeE . " | " . $dtvE . " | " . $mot . PHP_EOL;
+$linhas = $nomeP . " | " . $idp . " | " . $escolha . " | " . $dtn . " | " . $dtv . " | " . $nada . " | " . $ide . " | " . $nomeE . " | " . $dtvE . " | " . $mot . PHP_EOL;
 
 file_put_contents("12Operacao.txt", $linhas, FILE_APPEND);
 
