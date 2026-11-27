@@ -1,19 +1,25 @@
-        .calc {
-            border: 5px solid red;
-            border-radius: 20px;
-            text-align: center;
-        }
-        .calc2 {
-            border: 5px solid red;
-            border-radius: 20px;
-            text-align: center;
-        }
+.calc {
+    border: 5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
 
-        .calc legend {
-            color: red;
-            font-size: 30px;
-            font-family: "Arial Black", "Impact", sans-serif;
-        }
-        img{
-            background-position: right;
-        }
+.calc2 {
+    border: 5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.calc legend {
+    color: red;
+    font-size: 30px;
+    font-family: "Arial Black", "Impact", sans-serif;
+}
+
+img {
+        background-position: right;
+}
+
+body {
+    background-color: white;
+}
