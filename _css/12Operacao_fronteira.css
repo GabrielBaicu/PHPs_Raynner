@@ -1,0 +1,29 @@
+fieldset {
+    border: 5px black double;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.documentos {
+    display: flex;
+    flex-direction: row;
+}
+
+.passaporte {
+    border: 5px solid black;
+    background-color: cornflowerblue;
+    margin: 10px;
+    justify-content: center;
+    
+    padding: 5px;
+}
+
+.passe_entrada {
+    border: 5px solid black;
+    background-color: lightcoral;
+    margin: 10px;
+    justify-content: center;
+    
+    padding: 5px;
+}
